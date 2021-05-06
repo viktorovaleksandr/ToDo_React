@@ -1,7 +1,7 @@
 import { useState, useRef, useEffect } from "react";
 
 export function TodoItem({ id, title, completed, toggleTodo, deleteTodo, updateTodo }) {
-   const editRef = useRef();
+  const editRef = useRef();
   const [value, setValue] = useState(title);
   const [editing, setEditing] = useState(false);
   const classNameCompeted = completed ? "completed" : "";
@@ -43,5 +43,3 @@ export function TodoItem({ id, title, completed, toggleTodo, deleteTodo, updateT
     </li>
   );
 }
-
-// Не срабатывает блюр 

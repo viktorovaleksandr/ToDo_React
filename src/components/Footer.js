@@ -1,5 +1,4 @@
 export function Footer({ activeTodosCount, hasCompleted, filter, setFilter, deleteAllCompletedTodos }) {
-  
     return (
     <footer className="footer">
       <span className="todo-count">

@@ -1,8 +1,8 @@
 import "./styles.css";
-import { InputTodo } from "./InputTodo";
-import { ListTodos } from "./ListTodos";
-import { Footer } from "./Footer";
-import { ToggleTodos } from "./ToggleTodos";
+import { InputTodo } from "./components/InputTodo";
+import { ListTodos } from "./components/ListTodos";
+import { Footer } from "./components/Footer";
+import { ToggleTodos } from "./components/ToggleTodos";
 import { useEffect, useState } from "react";
 
 export default function App() {
@@ -104,8 +104,6 @@ export default function App() {
     if (todo.completed) count++;
     return count;
   }, 0);
-
- 
 
   const hasCompleted = activeTodosCount < todos.length;
 
